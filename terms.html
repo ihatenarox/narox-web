@@ -1,47 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
   <title>Terms of Service</title>
 
   <style>
-    body{
-      background:#0f0f0f;
-      color:white;
-      font-family:Arial;
-      max-width:800px;
-      margin:auto;
-      padding:40px;
-      line-height:1.7;
+
+    *{
+
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+
     }
 
-    h1{
-      color:#5865F2;
+    body{
+
+      min-height:100vh;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+      padding:40px;
+
+      overflow:hidden;
+
+      font-family:
+      Arial,
+      sans-serif;
+
+      background:
+      linear-gradient(
+        135deg,
+        #050816,
+        #0f172a
+      );
+
+      color:white;
+
+      position:relative;
+
     }
+
+    /* ========================= */
+    /* BACKGROUND GLOW */
+    /* ========================= */
+
+    body::before{
+
+      content:"";
+
+      position:absolute;
+
+      width:600px;
+      height:600px;
+
+      background:
+      rgba(88,101,242,0.10);
+
+      border-radius:50%;
+
+      top:-220px;
+      right:-220px;
+
+      filter:blur(50px);
+
+    }
+
+    body::after{
+
+      content:"";
+
+      position:absolute;
+
+      width:500px;
+      height:500px;
+
+      background:
+      rgba(14,165,233,0.08);
+
+      border-radius:50%;
+
+      bottom:-220px;
+      left:-220px;
+
+      filter:blur(50px);
+
+    }
+
+    /* ========================= */
+    /* BOX */
+    /* ========================= */
 
     .box{
-      background:#1a1a1a;
-      padding:25px;
-      border-radius:15px;
+
+      position:relative;
+
+      width:100%;
+      max-width:850px;
+
+      padding:45px;
+
+      border-radius:28px;
+
+      background:
+      rgba(255,255,255,0.04);
+
+      border:
+      1px solid
+      rgba(255,255,255,0.06);
+
+      backdrop-filter:
+      blur(14px);
+
+      overflow:hidden;
+
+      box-shadow:
+      0 0 45px
+      rgba(88,101,242,0.22);
+
+      z-index:2;
+
     }
+
+    /* ========================= */
+    /* LIGHT EFFECT */
+    /* ========================= */
+
+    .box::before{
+
+      content:"";
+
+      position:absolute;
+
+      width:320px;
+      height:320px;
+
+      background:
+      rgba(88,101,242,0.10);
+
+      border-radius:50%;
+
+      top:-150px;
+      right:-150px;
+
+      filter:blur(12px);
+
+    }
+
+    /* ========================= */
+    /* TITLE */
+    /* ========================= */
+
+    h1{
+
+      font-size:48px;
+
+      color:#5865F2;
+
+      margin-bottom:28px;
+
+      position:relative;
+      z-index:2;
+
+    }
+
+    /* ========================= */
+    /* TEXT */
+    /* ========================= */
+
+    p{
+
+      color:#d1d5db;
+
+      line-height:1.9;
+
+      font-size:18px;
+
+      margin-bottom:24px;
+
+      position:relative;
+      z-index:2;
+
+    }
+
+    /* ========================= */
+    /* STRONG */
+    /* ========================= */
+
+    strong{
+
+      color:#5865F2;
+
+    }
+
+    /* ========================= */
+    /* FOOTER */
+    /* ========================= */
+
+    .footer{
+
+      margin-top:25px;
+
+      color:#8f8f8f;
+
+      font-size:15px;
+
+      position:relative;
+      z-index:2;
+
+    }
+
   </style>
+
 </head>
+
 <body>
 
-<div class="box">
-  <h1>Terms of Service</h1>
+  <div class="box">
 
-  <p>By using this Discord bot, you agree to follow Discord’s Terms of Service and Community Guidelines.</p>
+    <h1>
 
-  <p>This bot is provided "as is" without guarantees of uptime or availability.</p>
+      Terms of Service
 
-  <p>Users may not abuse, exploit, or use the bot for harmful activities.</p>
+    </h1>
 
-  <p>The developer reserves the right to restrict access to the bot at any time.</p>
+    <p>
 
-  <p>Last Updated: May 2026</p>
-</div>
+      By using this Discord bot,
+      you agree to follow
+      Discord’s Terms of Service
+      and Community Guidelines.
+
+    </p>
+
+    <p>
+
+      This bot is provided
+      <strong>"as is"</strong>
+      without guarantees of uptime,
+      stability, or availability.
+
+    </p>
+
+    <p>
+
+      Users may not abuse,
+      exploit, spam, or use
+      the bot for harmful,
+      malicious, or illegal
+      activities.
+
+    </p>
+
+    <p>
+
+      The developer reserves
+      the right to restrict,
+      suspend, or terminate
+      access to the bot
+      at any time.
+
+    </p>
+
+    <p>
+
+      Continued use of the bot
+      indicates acceptance
+      of these terms.
+
+    </p>
+
+    <div class="footer">
+
+      Last Updated:
+      May 2026
+
+    </div>
+
+  </div>
 
 </body>
+
 </html>
