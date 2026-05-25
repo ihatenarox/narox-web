@@ -1,102 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
 
   <title>YATO Bot</title>
 
   <style>
+
     *{
+
       margin:0;
       padding:0;
       box-sizing:border-box;
+
     }
 
     body{
-      background:#0d0d0d;
-      color:white;
-      font-family:Arial, sans-serif;
-      height:100vh;
+
+      min-height:100vh;
+
       display:flex;
       justify-content:center;
       align-items:center;
+
+      overflow:hidden;
+
+      font-family:
+      Arial,
+      sans-serif;
+
+      background:
+      linear-gradient(
+        135deg,
+        #050816,
+        #0f172a
+      );
+
+      color:white;
+
+      position:relative;
+
     }
+
+    /* ========================= */
+    /* BACKGROUND GLOW */
+    /* ========================= */
+
+    body::before{
+
+      content:"";
+
+      position:absolute;
+
+      width:600px;
+      height:600px;
+
+      background:
+      rgba(88,101,242,0.12);
+
+      border-radius:50%;
+
+      top:-220px;
+      right:-220px;
+
+      filter:blur(50px);
+
+    }
+
+    body::after{
+
+      content:"";
+
+      position:absolute;
+
+      width:500px;
+      height:500px;
+
+      background:
+      rgba(14,165,233,0.08);
+
+      border-radius:50%;
+
+      bottom:-220px;
+      left:-220px;
+
+      filter:blur(50px);
+
+    }
+
+    /* ========================= */
+    /* CONTAINER */
+    /* ========================= */
 
     .container{
-      text-align:center;
-      background:#161616;
-      padding:50px;
-      border-radius:25px;
+
+      position:relative;
+
       width:90%;
-      max-width:500px;
-      box-shadow:0 0 30px rgba(88,101,242,0.25);
+      max-width:560px;
+
+      padding:55px;
+
+      border-radius:30px;
+
+      text-align:center;
+
+      background:
+      rgba(255,255,255,0.04);
+
+      border:
+      1px solid
+      rgba(255,255,255,0.06);
+
+      backdrop-filter:
+      blur(14px);
+
+      overflow:hidden;
+
+      box-shadow:
+      0 0 45px
+      rgba(88,101,242,0.25);
+
+      transition:
+      0.35s ease;
+
+      z-index:2;
+
     }
+
+    .container:hover{
+
+      transform:
+      translateY(-6px);
+
+      box-shadow:
+      0 0 65px
+      rgba(88,101,242,0.38);
+
+    }
+
+    /* ========================= */
+    /* CARD LIGHT */
+    /* ========================= */
+
+    .container::before{
+
+      content:"";
+
+      position:absolute;
+
+      width:340px;
+      height:340px;
+
+      background:
+      rgba(88,101,242,0.10);
+
+      border-radius:50%;
+
+      top:-160px;
+      right:-160px;
+
+      filter:blur(15px);
+
+    }
+
+    /* ========================= */
+    /* TITLE */
+    /* ========================= */
 
     h1{
-      font-size:42px;
-      margin-bottom:15px;
+
+      font-size:52px;
+
       color:#5865F2;
+
+      margin-bottom:14px;
+
+      position:relative;
+      z-index:2;
+
     }
+
+    /* ========================= */
+    /* DESCRIPTION */
+    /* ========================= */
 
     p{
-      color:#b5b5b5;
-      margin-bottom:35px;
+
+      color:#c4c4c4;
+
+      margin-bottom:40px;
+
+      font-size:18px;
+
+      line-height:1.8;
+
+      position:relative;
+      z-index:2;
+
     }
 
+    /* ========================= */
+    /* BUTTONS */
+    /* ========================= */
+
     .buttons{
+
       display:flex;
-      gap:15px;
+
+      gap:18px;
+
       justify-content:center;
+
       flex-wrap:wrap;
+
+      position:relative;
+      z-index:2;
+
     }
 
     a{
+
       text-decoration:none;
+
     }
 
+    /* ========================= */
+    /* BUTTON */
+    /* ========================= */
+
     button{
-      background:#5865F2;
-      color:white;
+
       border:none;
-      padding:15px 25px;
-      border-radius:14px;
+
+      padding:16px 28px;
+
+      border-radius:16px;
+
       font-size:16px;
+
+      font-weight:bold;
+
       cursor:pointer;
-      transition:0.2s;
+
+      color:white;
+
+      background:
+      linear-gradient(
+        135deg,
+        #5865F2,
+        #7289da
+      );
+
+      transition:
+      0.25s ease;
+
+      box-shadow:
+      0 0 18px
+      rgba(88,101,242,0.25);
+
     }
 
     button:hover{
-      transform:scale(1.05);
-      background:#4752c4;
+
+      transform:
+      scale(1.06);
+
+      box-shadow:
+      0 0 30px
+      rgba(88,101,242,0.4);
+
     }
+
   </style>
+
 </head>
+
 <body>
 
   <div class="container">
+
     <h1>YATO Bot</h1>
 
     <p>
-      Official website for YATO Discord Bot
+
+      Official website for YATO Discord Bot.
+      Built for moderation, advanced systems,
+      and premium Discord experiences.
+
     </p>
 
     <div class="buttons">
 
       <a href="./narox-policy.html">
-        <button>Privacy Policy</button>
+
+        <button>
+
+          Privacy Policy
+
+        </button>
+
       </a>
 
       <a href="./terms.html">
-        <button>Terms of Service</button>
+
+        <button>
+
+          Terms of Service
+
+        </button>
+
       </a>
 
       <a href="./owner.html">
-        <button>Owner</button>
+
+        <button>
+
+          Owner
+
+        </button>
+
       </a>
 
     </div>
+
   </div>
 
 </body>
+
 </html>
