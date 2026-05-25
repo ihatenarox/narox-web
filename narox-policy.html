@@ -1,84 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <title>NAROX Privacy Policy</title>
 
   <style>
-    body{
-      background:#0f0f0f;
-      color:white;
-      font-family:Arial;
-      max-width:800px;
-      margin:auto;
-      padding:40px;
-      line-height:1.7;
+
+    *{
+
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+
     }
 
-    h1{
-      color:#5865F2;
-      margin-bottom:20px;
+    body{
+
+      min-height:100vh;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+      padding:40px;
+
+      overflow:hidden;
+
+      font-family:
+      Arial,
+      sans-serif;
+
+      background:
+      linear-gradient(
+        135deg,
+        #050816,
+        #0f172a
+      );
+
+      color:white;
+
+      position:relative;
+
     }
+
+    /* ========================= */
+    /* BACKGROUND GLOW */
+    /* ========================= */
+
+    body::before{
+
+      content:"";
+
+      position:absolute;
+
+      width:600px;
+      height:600px;
+
+      background:
+      rgba(88,101,242,0.10);
+
+      border-radius:50%;
+
+      top:-220px;
+      right:-220px;
+
+      filter:blur(50px);
+
+    }
+
+    body::after{
+
+      content:"";
+
+      position:absolute;
+
+      width:500px;
+      height:500px;
+
+      background:
+      rgba(14,165,233,0.08);
+
+      border-radius:50%;
+
+      bottom:-220px;
+      left:-220px;
+
+      filter:blur(50px);
+
+    }
+
+    /* ========================= */
+    /* BOX */
+    /* ========================= */
 
     .box{
-      background:#1a1a1a;
-      padding:25px;
-      border-radius:15px;
+
+      position:relative;
+
+      width:100%;
+      max-width:850px;
+
+      padding:45px;
+
+      border-radius:28px;
+
+      background:
+      rgba(255,255,255,0.04);
+
+      border:
+      1px solid
+      rgba(255,255,255,0.06);
+
+      backdrop-filter:
+      blur(14px);
+
+      overflow:hidden;
+
+      box-shadow:
+      0 0 45px
+      rgba(88,101,242,0.22);
+
+      z-index:2;
+
     }
 
+    /* ========================= */
+    /* LIGHT EFFECT */
+    /* ========================= */
+
+    .box::before{
+
+      content:"";
+
+      position:absolute;
+
+      width:320px;
+      height:320px;
+
+      background:
+      rgba(88,101,242,0.10);
+
+      border-radius:50%;
+
+      top:-150px;
+      right:-150px;
+
+      filter:blur(12px);
+
+    }
+
+    /* ========================= */
+    /* TITLE */
+    /* ========================= */
+
+    h1{
+
+      font-size:48px;
+
+      color:#5865F2;
+
+      margin-bottom:25px;
+
+      position:relative;
+      z-index:2;
+
+    }
+
+    /* ========================= */
+    /* TEXT */
+    /* ========================= */
+
+    p{
+
+      color:#d1d5db;
+
+      line-height:1.9;
+
+      font-size:18px;
+
+      margin-bottom:24px;
+
+      position:relative;
+      z-index:2;
+
+    }
+
+    /* ========================= */
+    /* LIST */
+    /* ========================= */
+
     ul{
-      margin-left:20px;
-      margin-top:10px;
-      margin-bottom:20px;
+
+      margin-left:25px;
+
+      margin-bottom:30px;
+
+      position:relative;
+      z-index:2;
+
     }
 
     li{
-      margin-bottom:8px;
+
+      margin-bottom:12px;
+
+      color:#c4c4c4;
+
+      font-size:17px;
+
     }
+
+    /* ========================= */
+    /* STRONG */
+    /* ========================= */
 
     strong{
+
       color:#5865F2;
+
     }
+
+    /* ========================= */
+    /* FOOTER */
+    /* ========================= */
+
+    .footer{
+
+      margin-top:25px;
+
+      color:#8f8f8f;
+
+      font-size:15px;
+
+      position:relative;
+      z-index:2;
+
+    }
+
   </style>
+
 </head>
+
 <body>
 
-<div class="box">
+  <div class="box">
 
-  <h1>NAROX Privacy Policy</h1>
+    <h1>
 
-  <p>
-    NAROX may temporarily collect and store limited data such as:
-  </p>
+      NAROX Privacy Policy
 
-  <ul>
-    <li>User IDs</li>
-    <li>Server IDs</li>
-    <li>Moderation data</li>
-    <li>Leveling data</li>
-    <li>Activity-related data</li>
-  </ul>
+    </h1>
 
-  <p>
-    This data is used strictly for the functionality and operation of the bot.
-  </p>
+    <p>
 
-  <p>
-    NAROX does not sell, trade, or share user data with third parties.
-  </p>
+      NAROX may temporarily collect
+      and store limited data such as:
 
-  <p>
-    Users may request deletion of their stored data by contacting the developer on Discord:
-    <strong>ihatenarox</strong>
-  </p>
+    </p>
 
-  <p>
-    Last Updated: May 2026
-  </p>
+    <ul>
 
-</div>
+      <li>User IDs</li>
+
+      <li>Server IDs</li>
+
+      <li>Moderation data</li>
+
+      <li>Leveling data</li>
+
+      <li>Activity-related data</li>
+
+    </ul>
+
+    <p>
+
+      This data is used strictly
+      for the functionality and
+      operation of the bot.
+
+    </p>
+
+    <p>
+
+      NAROX does not sell,
+      trade, or share user data
+      with third parties.
+
+    </p>
+
+    <p>
+
+      Users may request deletion
+      of their stored data by
+      contacting the developer
+      on Discord:
+
+      <strong>
+
+        ihatenarox
+
+      </strong>
+
+    </p>
+
+    <div class="footer">
+
+      Last Updated:
+      May 2026
+
+    </div>
+
+  </div>
 
 </body>
+
 </html>
